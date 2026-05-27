@@ -235,7 +235,7 @@ class NutritionTab extends StatelessWidget {
           /// BREAKFAST
           mealCard(
             image:
-            "https://images.unsplash.com/photo-1528207776546-365bb710ee93",
+            "assets/images/food3.jpg",
             title: "Blueberry Pancake",
             mealType: "Breakfast",
             calories: "520 kcal",
@@ -250,7 +250,7 @@ class NutritionTab extends StatelessWidget {
           /// LUNCH
           mealCard(
             image:
-            "https://images.unsplash.com/photo-1532550907401-a500c9a57435",
+            "assets/images/food2.jpg",
             title: "Chicken Rice Bowl",
             mealType: "Lunch",
             calories: "780 kcal",
@@ -265,7 +265,7 @@ class NutritionTab extends StatelessWidget {
           /// DINNER
           mealCard(
             image:
-            "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2",
+            "assets/images/food1.jpg",
             title: "Healthy Salmon",
             mealType: "Dinner",
             calories: "600 kcal",
