@@ -28,7 +28,7 @@ class NutritionTab extends StatelessWidget {
             ),
             child: Stack(
               children: [
-                Image.network(
+                Image.asset(
                   image,
                   height: 220,
                   width: double.infinity,
