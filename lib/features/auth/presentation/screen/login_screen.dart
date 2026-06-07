@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:omda_fit/features/auth/presentation/widget/fields_login.dart';
 
 class LoginScreen extends StatefulWidget {
+  static String routeName="LoginScreen";
   const LoginScreen({super.key});
 
   @override

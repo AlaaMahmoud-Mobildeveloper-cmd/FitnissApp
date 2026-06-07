@@ -5,7 +5,9 @@ import 'package:omda_fit/features/chat_ai/presentation/screen/chat_ai_screen.dar
 import 'package:omda_fit/features/home_screen/presentation/screen/home_screen.dart';
 import 'package:omda_fit/features/home_screen/presentation/screen/tab/home_tab.dart';
 import 'package:omda_fit/features/home_screen/presentation/screen/tab/nutrition_tab.dart';
+import 'package:omda_fit/features/splash_screen/splash_screen.dart';
 import 'core/app_colors.dart';
+import 'features/onbord/presentation/screen/onboarding_screen.dart';
 
 void main() {
   runApp(const OmdaFitApp());
@@ -33,9 +35,12 @@ class OmdaFitApp extends StatelessWidget {
           displayColor: AppColors.textPrimary,
         ),
       ),
-     initialRoute:HomeScreen.routeName,
+     initialRoute:SplashScreen.routeName,
      routes: {
         HomeScreen.routeName:(context)=>HomeScreen(),
+       OnboardingScreen.routeName:(context)=>OnboardingScreen(),
+       LoginScreen.routeName:(context)=>LoginScreen(),
+       SplashScreen.routeName:(context)=>SplashScreen(),
        AiChatScreen.routeName:(context)=>AiChatScreen()
      },
     );
