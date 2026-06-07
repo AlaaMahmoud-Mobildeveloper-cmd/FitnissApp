@@ -102,7 +102,7 @@ class _SplashScreenState
     );
 
     Timer(
-      const Duration(seconds: 5),
+      const Duration(seconds: 10),
           () {
 
        Navigator.pushReplacementNamed(
@@ -136,7 +136,6 @@ class _SplashScreenState
         fit: StackFit.expand,
 
         children: [
-
           Image.asset(
             "assets/images/IMG7.JPG",
             fit: BoxFit.cover,
