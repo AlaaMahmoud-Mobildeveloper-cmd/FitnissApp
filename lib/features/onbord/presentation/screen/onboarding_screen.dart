@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:omda_fit/features/auth/presentation/screen/login_screen.dart';
 
 class OnboardingScreen extends StatefulWidget {
   static String routeName = "OnboardingScreen";
@@ -283,22 +284,13 @@ class _OnboardingScreenState
                       GestureDetector(
                         onTap: () {
 
-                          if (currentIndex ==
-                              onboardingData
-                                  .length -
-                                  1) {
+                          if (currentIndex == onboardingData.length - 1) {
+                            Navigator.pushNamed(context, LoginScreen.routeName);
                           } else {
-
-                            pageController
-                                .nextPage(
-                              duration:
-                              const Duration(
-                                milliseconds:
-                                500,
+                            pageController.nextPage(duration:
+                              const Duration(milliseconds: 500,
                               ),
-
-                              curve: Curves
-                                  .easeInOut,
+                              curve: Curves.easeInOut,
                             );
                           }
                         },
